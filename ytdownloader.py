@@ -40,12 +40,6 @@ def dlAudButtonFunc():
     dlLink = linkContainer.get()
     YouTube(dlLink).streams.get_audio_only().download(folder)
 
-
-# logoImg = PhotoImage(file="logo_img.png")
-# logoImg.place(relx=0.1,rely=0.1)
-# Label(root, image=logoImg).pack()
-
-
 load=Image.open("assets/logo.png")
 render=ImageTk.PhotoImage(load)
 img=Label(root, image=render, bg="#161B22")
